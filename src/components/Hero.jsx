@@ -24,7 +24,7 @@ function Hero() {
         <div className="hero-image-section">
           <div className="image-wrapper">
             <img 
-              src="/src/pictures/kyla.png" 
+              src="/pictures/kyla.png" 
               alt="Kyla Dominic Genodiala" 
               className="profile-image"
             />

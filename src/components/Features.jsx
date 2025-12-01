@@ -7,28 +7,28 @@ function Features() {
       title: 'Real-time GPS Tracking',
       description: 'Advanced GPS tracking monitors dashers in real-time, showing exact location and estimated delivery time on interactive maps.',
       icon: <MapPin size={32} />,
-      image: '/src/pictures/Feature 1.jpg',
+      image: '/pictures/Feature 1.jpg',
       color: '#8b5cf6'
     },
     {
       title: 'CampusEats Recommendations',
       description: 'Personalized food recommendations based on your preferences, exploring various shops and discovering new delicious meals.',
       icon: <Star size={32} />,
-      image: '/src/pictures/Feature 3.jpg',
+      image: '/pictures/Feature 3.jpg',
       color: '#3b82f6'
     },
     {
       title: 'Live Video Streaming',
       description: 'Watch live streams from restaurants and food preparation in real-time, ensuring transparency and food quality.',
       icon: <Video size={32} />,
-      image: '/src/pictures/Feature 5.jpg',
+      image: '/pictures/Feature 5.jpg',
       color: '#06b6d4'
     },
     {
       title: 'Microsoft Authentication',
       description: 'Secure login system integrated with Microsoft authentication for university students and staff members.',
       icon: <Shield size={32} />,
-      image: '/src/pictures/Feature 2.jpg',
+      image: '/pictures/Feature 2.jpg',
       color: '#f59e0b'
     }
   ]

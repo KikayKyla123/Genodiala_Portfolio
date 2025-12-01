@@ -9,7 +9,7 @@ function Projects() {
       technologies: ['React.js', 'Spring Boot', 'TypeScript', 'REST API'],
       github: 'https://github.com/Lraccc/campus_eats.git',
       demo: '#',
-      image: '/src/pictures/Campuseats.jpg',
+      image: '/pictures/Campuseats.jpg',
       team: true
     },
     {
@@ -18,7 +18,7 @@ function Projects() {
       technologies: ['React.js', 'Node.js', 'MongoDB', 'Express'],
       github: 'https://github.com/Penguinmans32/IT342-G3-NeighborNet.git',
       demo: '#',
-      image: '/src/pictures/neighbor.jpg',
+      image: '/pictures/neighbor.jpg',
       team: true
     },
     {
@@ -27,7 +27,7 @@ function Projects() {
       technologies: ['React.js', 'Java', 'Spring Boot', 'MySQL'],
       github: 'https://github.com/Lraccc/wildcarts.git',
       demo: '#',
-      image: '/src/pictures/Wildcarts.png',
+      image: '/pictures/Wildcarts.png',
       team: true
     },
   ]
