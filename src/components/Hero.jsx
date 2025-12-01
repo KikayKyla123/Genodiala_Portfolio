@@ -36,12 +36,12 @@ function Hero() {
           <h1 className="hero-title">
             Hi, I'm <span className="highlight">Kyla Dominic Genodiala</span>
           </h1>
-          <p className="hero-subtitle">Frontend Developer | UI/UX Designer | QA Engineer</p>
+          <p className="hero-subtitle">Frontend Developer | UI/UX Designer | QA Tester</p>
           
           <div className="hero-info">
             <div className="info-item">
               <Mail size={20} />
-              <a href="mailto:kylagenodlala36@gmail.com">kylagenodlala36@gmail.com</a>
+              <a href="mailto:kylagenodiala36@gmail.com">kylagenodiala36@gmail.com</a>
             </div>
             <div className="info-item">
               <Phone size={20} />

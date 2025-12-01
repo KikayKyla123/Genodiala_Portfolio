@@ -20,8 +20,8 @@ function Header() {
           <button onClick={() => scrollToSection('home')}>Home</button>
           <button onClick={() => scrollToSection('about')}>About</button>
  <button onClick={() => scrollToSection('skills')}>Skills</button>
+           <button onClick={() => scrollToSection('projects')}>Projects</button>
           <button onClick={() => scrollToSection('features')}>Features</button>
-          <button onClick={() => scrollToSection('projects')}>Projects</button>
           <button onClick={() => scrollToSection('contact')}>Contact</button>
         </nav>
 

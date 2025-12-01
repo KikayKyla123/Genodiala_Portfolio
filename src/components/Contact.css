@@ -60,22 +60,37 @@
 }
 
 .contact-items {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-item {
   display: flex;
   gap: 1rem;
   align-items: flex-start;
-  padding: 1.5rem;
+  padding: 2rem;
   background: white;
   border-radius: 1rem;
   border: 2px solid transparent;
   transition: all 0.4s ease;
   position: relative;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact-item svg {
+  color: var(--primary-color);
+  margin: 0 auto;
+}
+
+.contact-item > div {
+  width: 100%;
 }
 
 .contact-item::before {
@@ -97,7 +112,7 @@
 }
 
 .contact-item:hover {
-  transform: translateX(10px) scale(1.02);
+  transform: translateY(-10px) scale(1.02);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   background: linear-gradient(135deg, #ffffff, #fef3f8);
 }
@@ -177,8 +192,7 @@
     padding: 3rem 0;
   }
 
-  .contact-content {
+  .contact-items {
     grid-template-columns: 1fr;
-    gap: 3rem;
   }
 }
