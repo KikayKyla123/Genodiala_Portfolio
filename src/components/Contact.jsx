@@ -8,13 +8,45 @@ function Contact() {
     email: '',
     message: ''
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Add your form submission logic here
-    console.log('Form submitted:', formData)
-    alert('Thank you for your message! I will get back to you soon.')
-    setFormData({ name: '', email: '', message: '' })
+    setIsSubmitting(true)
+    setSubmitStatus('')
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: '8e7e4b3a-1c2d-4a5f-9e3b-6c8a7d4f2e1b', // You'll replace this with your own key
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          subject: `New Portfolio Contact from ${formData.name}`
+        })
+      })
+
+      const data = await response.json()
+
+      if (data.success) {
+        setSubmitStatus('success')
+        alert('Thank you! Your message has been sent successfully. I will get back to you soon!')
+        setFormData({ name: '', email: '', message: '' })
+      } else {
+        setSubmitStatus('error')
+        alert('Oops! Something went wrong. Please try again or email me directly.')
+      }
+    } catch (error) {
+      setSubmitStatus('error')
+      alert('Failed to send message. Please email me directly at kylagenodlala36@gmail.com')
+    }
+
+    setIsSubmitting(false)
   }
 
   const handleChange = (e) => {
@@ -102,8 +134,8 @@ function Contact() {
               />
             </div>
 
-            <button type="submit" className="btn btn-primary">
-              Send Message
+            <button type="submit" className="btn btn-primary" disabled={isSubmitting}>
+              {isSubmitting ? 'Sending...' : 'Send Message'}
               <Send size={18} />
             </button>
           </form>
